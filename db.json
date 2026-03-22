@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop Pro 15",
+      "description": "High-performance laptop with 15-inch display",
+      "price": 1299.99,
+      "category": "Electronics",
+      "stock": 25,
+      "createdAt": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with USB receiver",
+      "price": 29.99,
+      "category": "Accessories",
+      "stock": 150,
+      "createdAt": "2024-02-20T14:15:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard",
+      "description": "RGB backlit mechanical gaming keyboard",
+      "price": 89.99,
+      "category": "Accessories",
+      "stock": 75,
+      "createdAt": "2024-03-10T09:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "USB-C Hub",
+      "description": "7-in-1 USB-C hub with HDMI and SD card reader",
+      "price": 45.99,
+      "category": "Accessories",
+      "stock": 100,
+      "createdAt": "2024-01-25T11:45:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Monitor 27 inch",
+      "description": "4K UHD monitor with HDR support",
+      "price": 399.99,
+      "category": "Electronics",
+      "stock": 40,
+      "createdAt": "2024-02-05T16:20:00Z"
+    }
+  ]
+}
