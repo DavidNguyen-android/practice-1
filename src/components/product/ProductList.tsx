@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
-import { useDeleteProduct } from '../hooks/useProducts';
-import type { Product, ProductFilters } from '../types/product';
+import { useDeleteProduct } from '../../hooks/useProducts';
+import type { Product, ProductFilters } from '../../types/product';
 
 interface ProductListProps {
   products: Product[];

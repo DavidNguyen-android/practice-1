@@ -23,7 +23,7 @@ export const useProducts = () => {
 
   useEffect(() => {
     fetchProducts();
-  }, [fetchProducts]);
+  }, []);
 
   return { data, isLoading, error, refetch: fetchProducts };
 };

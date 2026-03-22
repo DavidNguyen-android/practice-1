@@ -1,17 +1,17 @@
-import { api } from '../lib/api';
+import { axiosClient } from '../lib/api/api';
 import type { ProductFormData } from '../schemas/productSchema';
 import type { Product } from '../types/product';
 
 export const productService = {
   // Get all products
   getProducts: async (): Promise<Product[]> => {
-    const response = await api.get<Product[]>('/products');
+    const response = await axiosClient.get<Product[]>('/products');
     return response.data;
   },
 
   // Get single product by ID
   getProduct: async (id: string): Promise<Product> => {
-    const response = await api.get<Product>(`/products/${id}`);
+    const response = await axiosClient.get<Product>(`/products/${id}`);
     return response.data;
   },
 
@@ -21,7 +21,7 @@ export const productService = {
       ...product,
       createdAt: new Date().toISOString(),
     };
-    const response = await api.post<Product>('/products', newProduct);
+    const response = await axiosClient.post<Product>('/products', newProduct);
     return response.data;
   },
 
@@ -30,12 +30,12 @@ export const productService = {
     id: string,
     product: ProductFormData
   ): Promise<Product> => {
-    const response = await api.put<Product>(`/products/${id}`, product);
+    const response = await axiosClient.put<Product>(`/products/${id}`, product);
     return response.data;
   },
 
   // Delete product
   deleteProduct: async (id: string): Promise<void> => {
-    await api.delete(`/products/${id}`);
+    await axiosClient.delete(`/products/${id}`);
   },
 };

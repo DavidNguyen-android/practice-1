@@ -1,10 +1,7 @@
-export interface Product {
+import type { ProductFormData } from "../schemas/productSchema";
+
+export interface Product extends ProductFormData {
   id: string;
-  name: string;
-  description: string;
-  price: number;
-  category: string;
-  stock: number;
   createdAt: string;
 }
 
